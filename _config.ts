@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import bundler from "lume/plugins/bundler.ts";
 import date from "lume/plugins/date.ts";
 import postcss from "lume/plugins/postcss.ts";
 import svgo from "lume/plugins/svgo.ts";
@@ -14,6 +15,9 @@ const site = lume({
 site
   .ignore("README.md")
   .copy("img")
+  .use(bundler({
+    options: { bundle: "module" },
+  }))
   .use(postcss())
   .use(svgo())
   .use(terser())
