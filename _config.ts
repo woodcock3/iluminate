@@ -21,7 +21,9 @@ site
   .use(postcss())
   .use(svgo())
   .use(terser())
-  .use(date())
+  .use(date({
+    locales: ["en-GB"],
+  }))
   .use(basePath())
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
