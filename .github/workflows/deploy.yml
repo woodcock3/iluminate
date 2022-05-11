@@ -25,11 +25,11 @@ jobs:
           deno run -A https://deno.land/x/lume/ci.ts
       - name: Deploy
         if: env.UPDATE_DENO != 'true'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
-          publish_dir: ./_site 
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          build_dir: _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   
   # Update Deno if env.UPDATE_DENO = true
@@ -48,7 +48,7 @@ jobs:
         with:
           deno-version: v1.x
           
-      - run: lume init
+      - run: lume update
         if: env.UPDATE_DENO == 'true'
   
       - name: pull request on lume update
