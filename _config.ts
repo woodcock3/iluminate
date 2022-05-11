@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 import bundler from "lume/plugins/bundler.ts";
 import date from "lume/plugins/date.ts";
+import windicss from "_plugins/windicss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
