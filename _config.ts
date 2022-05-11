@@ -13,7 +13,7 @@ site
   .ignore("README.md")
   .copy("img")
   .use(postcss())
-  .use(svgo());
+  .use(svgo())
   .use(terser())
   .use(date())
   .use(basePath())
