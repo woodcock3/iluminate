@@ -19,6 +19,13 @@ site
   .use(bundler({
     options: { bundle: "module" },
   }))
+  .use(windicss({
+    config: {
+      shortcuts: {
+        "btn-green": "text-white bg-green-500 hover:bg-green-700",
+      },
+    },
+  }))
   .use(postcss())
   .use(svgo())
   .use(terser())
