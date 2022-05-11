@@ -7,7 +7,9 @@ import basePath from "lume/plugins/base_path.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
 
-const site = lume();
+const site = lume({
+  location: new URL("https://woodcock3.github.io/illuminate/"), // Update your base URL here
+});
 
 site
   .ignore("README.md")
