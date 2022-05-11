@@ -10,7 +10,7 @@ import resolveUrls from "lume/plugins/resolve_urls.ts";
 const site = lume();
 
 site
-  .ignore("README.md", "node_modules")
+  .ignore("README.md")
   .copy("img")
   .use(postcss())
   .use(svgo());
