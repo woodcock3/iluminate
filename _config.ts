@@ -9,7 +9,7 @@ import resolveUrls from "lume/plugins/resolve_urls.ts";
 const site = lume();
 
 site
-  .ignore("README.md")
+  .ignore("README.md", "node_modules")
   .copy("img")
   .use(postcss())
   .use(terser())
