@@ -48,5 +48,6 @@ site
   .use(basePath())
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
+  .loadAssets([".js"], textLoader)
 
 export default site;
