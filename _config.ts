@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import esbuild from "lume/plugins/esbuild.ts";
 import bundler from "lume/plugins/bundler.ts";
 import date from "lume/plugins/date.ts";
 import windicss from "./_plugins/windicss.ts";
@@ -16,6 +17,19 @@ const site = lume({
 site
   .ignore("README.md")
   .copy("img")
+  .use(esbuild({
+    extensions: [".ts", ".js"],
+    options: {
+      bundle: true,
+      format: "esm",
+      minify: true,
+      keepNames: true,
+      platform: "browser",
+      target: "esnext",
+      incremental: true,
+      treeShaking: true,
+    },
+  }));
   .use(bundler({
     options: { bundle: "module" },
   }))
