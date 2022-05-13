@@ -1,2 +1,2 @@
 # Luminate
-A Lume starter repo for windycss (tailwind alternative) and alpinejs
+A Lume starter repo for windicss (tailwind alternative) and alpinejs
