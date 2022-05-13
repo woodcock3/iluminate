@@ -8,7 +8,6 @@ import terser from "lume/plugins/terser.ts";
 import basePath from "lume/plugins/base_path.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
-import alpine from "https://esm.sh/alpinejs@3";
 
 const site = lume({
   location: new URL("https://woodcock3.github.io/luminate/"), // Update your base URL here
@@ -29,9 +28,6 @@ site
       incremental: true,
       treeShaking: true,
     },
-  }))
-  .use(bundler({
-    options: { bundle: "module" },
   }))
   .use(windicss({
     config: {
