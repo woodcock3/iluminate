@@ -23,6 +23,7 @@ site
       },
     },
   }))
+  .use(terser())
   .use(svgo())
   .use(date({
     locales: ["en-GB"],
