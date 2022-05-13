@@ -24,7 +24,6 @@ site
     },
   }))
   .use(svgo())
-  .use(terser())
   .use(date({
     locales: ["en-GB"],
   }))
