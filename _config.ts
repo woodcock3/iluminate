@@ -16,19 +16,6 @@ const site = lume({
 site
   .ignore("README.md")
   .copy("img")
-  .use(esbuild({
-    extensions: [".ts", ".js"],
-    options: {
-      bundle: true,
-      format: "esm",
-      minify: true,
-      keepNames: true,
-      platform: "browser",
-      target: "esnext",
-      incremental: true,
-      treeShaking: true,
-    },
-  }))
   .use(windicss({
     config: {
       shortcuts: {
@@ -44,6 +31,5 @@ site
   .use(basePath())
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
-  .loadAssets([".js"], textLoader)
 
 export default site;
