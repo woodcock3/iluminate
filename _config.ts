@@ -4,7 +4,7 @@ import bundler from "lume/plugins/bundler.ts";
 import date from "lume/plugins/date.ts";
 import windicss from "./_plugins/windicss.ts";
 import textLoader from "lume/core/loaders/text.ts";
-import * as processors from "./_processors.ts";
+import * as processor from "./_processor.ts";
 import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
 import basePath from "lume/plugins/base_path.ts";
@@ -32,7 +32,7 @@ site
   }))
   .use(basePath())
   .loadAssets([".js"], textLoader)
-  .process([".js"], processors.js)
+  .process([".js"], processor.js)
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
 
