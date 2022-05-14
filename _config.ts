@@ -11,6 +11,9 @@ import basePath from "lume/plugins/base_path.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
 
+export const siteSrc = "/";
+export const siteDest = "_site";
+
 const site = lume({
   location: new URL("https://woodcock3.github.io/luminate/"), // Update your base URL here
 });
