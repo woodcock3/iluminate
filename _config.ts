@@ -1,7 +1,6 @@
 import lume from "lume/mod.ts";
 import esbuild from "lume/plugins/esbuild.ts";
-import bundler from "lume/plugins/bundler.ts";
-import date from "lume/plugins/date.ts";
+import liquid from "lume/plugins/liquid.ts";
 import windicss from "./_plugins/windicss.ts";
 import textLoader from "lume/core/loaders/text.ts";
 import * as processor from "./_processor.ts";
@@ -28,11 +27,9 @@ site
       },
     },
   }))
+  .use(liquid())
   .use(terser())
   .use(svgo())
-  .use(date({
-    locales: ["en-GB"],
-  }))
   .use(basePath())
   .loadAssets([".js"], textLoader)
   .process([".js"], processor.js)
