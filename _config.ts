@@ -11,7 +11,7 @@ import basePath from "lume/plugins/base_path.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
 
-export const siteSrc = "/";
+export const siteSrc = "";
 export const siteDest = "_site";
 
 const site = lume({
