@@ -1,2 +1,2 @@
-export {default as alpine} from 'https://cdn.skypack.dev/alpinejs';
-export {default as partytown} from 'https://cdn.skypack.dev/@builder.io/partytown';
+export alpine from 'https://cdn.skypack.dev/alpinejs';
+export partytownSnippet from 'https://cdn.skypack.dev/@builder.io/partytown';
