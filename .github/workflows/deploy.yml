@@ -48,7 +48,7 @@ jobs:
         with:
           deno-version: v1.x
           
-      - run: deno vendor deps.ts 
+      - run: deno vendor deps.ts --force
         if: env.UPDATE_DENO == 'true'
 
       - name: Build site
