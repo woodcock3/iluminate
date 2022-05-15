@@ -48,7 +48,7 @@ jobs:
         with:
           deno-version: v1.x
           
-      - run: lume update
+      - run: lume upgrade
         if: env.UPDATE_DENO == 'true'
       - run: deno vendor deps.ts 
         if: env.UPDATE_DENO == 'true'
