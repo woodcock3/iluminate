@@ -54,7 +54,7 @@ jobs:
       - name: Build sit
         if: env.UPDATE_DENO != 'true'
         run: |
-          deno run -A --import-map=vendor/import_map.json deps.ts
+          deno run --import-map=vendor/import_map.json deps.ts
   
       - name: pull request on lume update
         if: env.UPDATE_DENO == 'true'
