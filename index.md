@@ -1,6 +1,6 @@
 ---
 title: "The first static page"
-layout: layouts/base.njk
+layout: layouts/base.liquid
 ---
 
 ## Alpine Test
