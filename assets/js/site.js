@@ -1,4 +1,4 @@
-import alpine from './../../deps.ts';
+import { alpine } from './../../deps.ts';
 alpine.start();
 
 import { partytownSnippet } from './../../deps.ts';
