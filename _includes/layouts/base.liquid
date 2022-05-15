@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head>{% assign buildversion = now | date:'?v=%s' %}
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/luminate/windi.css">
+    <link rel="stylesheet" href={ '/luminate/windi.css' | append: buildversion }}">
     <script defer type="module"> import alpinejs from 'https://cdn.skypack.dev/alpinejs'; alpinejs();</script>
     <title>{{ title }}</title>
   </head>
