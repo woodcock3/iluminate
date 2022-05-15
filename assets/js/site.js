@@ -1,1 +1,1 @@
-import {alpine, partytown} from './deps.ts';
+import {alpine, partytown} from './../../deps.ts';
