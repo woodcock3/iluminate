@@ -1,5 +1,10 @@
 metas:
   site: Rusticola
+  title: Luminate Starte
+  description: A lume starter repo with AlpineJS and Windicss
+  keywords: lume, deno, starter, repo, tailwind, windicss, alpine
+  image:
+  color: 
   twitter: "@misteroom"
   icon: /img/icon.png
   lang: en
