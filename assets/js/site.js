@@ -1,1 +1,1 @@
-import{alpine as m,partytown as o}from"./../../deps.ts";
+import t from"https://cdn.skypack.dev/alpinejs";t.start();import{partytownSnippet as p}from"https://cdn.skypack.dev/@builder.io/partytown";p();
