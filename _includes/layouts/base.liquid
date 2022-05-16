@@ -2,8 +2,9 @@
 <html lang="en">
   <head>{% assign buildversion = "now" | date:'?v=%s' %}
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
     <link rel="stylesheet" href="{{ '/luminate/windi.css' | append: buildversion }}">
-    <script type="module" src="{{ '/luminate/site.min.js' | append: buildversion }}"></script>
+    <script src="{{ '/luminate/site.min.js' | append: buildversion }}"></script>
     <title>{{ title }}</title>
   </head>
   <body>
