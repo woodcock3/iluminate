@@ -3,6 +3,7 @@ import esbuild from "lume/plugins/esbuild.ts";
 import liquid from "lume/plugins/liquid.ts";
 import windicss from "./_plugins/windicss.ts";
 import textLoader from "lume/core/loaders/text.ts";
+import metas from "lume/plugins/metas.ts";
 import * as processor from "./_processor.ts";
 import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
@@ -29,6 +30,7 @@ site
   }))
   .use(liquid())
   .use(terser())
+  . use(metas())
   .use(svgo())
   .use(basePath())
   .loadAssets([".js"], textLoader)
