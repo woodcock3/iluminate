@@ -1,0 +1,8 @@
+metas:
+  site: Rusticola
+  twitter: "@misteroom"
+  icon: /img/icon.png
+  lang: en
+
+mergedKeys:
+  metas: object
