@@ -30,7 +30,7 @@ site
   }))
   .use(liquid())
   .use(terser())
-  . use(metas())
+  .use(metas())
   .use(svgo())
   .use(basePath())
   .loadAssets([".js"], textLoader)
