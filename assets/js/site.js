@@ -1,1 +1,1 @@
-import t from"https://cdn.skypack.dev/alpinejs";t.start();
+import{Alpine as t}from"https://cdn.skypack.dev/alpinejs";t.start();
