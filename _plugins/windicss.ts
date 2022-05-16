@@ -30,7 +30,7 @@ const defaults: Options = {
   mode: "interpret",
   output: {
     mode: "file",
-    filename: "/windi.css",
+    filename: "/assets/css/windi.css",
   },
   config: {},
   windiLangFiles: "transpile",
