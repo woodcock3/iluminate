@@ -47,7 +47,7 @@ jobs:
         with:
           deno-version: v1.x
           
-      - run: deno vendor deps.ts --force
+      - run: deno vendor _deps.ts --force
         if: env.UPDATE_DENO == 'true'
   
       - name: pull request on lume update
