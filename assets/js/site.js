@@ -1,5 +1,6 @@
 import Alpine from 'https://cdn.skypack.dev/alpinejs';
+Alpine.start();
 
-export function Alpine.start();
+export function Alpine();
 
 
