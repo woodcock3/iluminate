@@ -29,6 +29,7 @@ site
     },
   }))
   .use(liquid())
+  .use(esbuild({extensions: [".ts", ".js"]}))
   // .use(terser())
   .use(metas())
   .use(svgo())
