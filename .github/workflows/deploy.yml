@@ -47,7 +47,9 @@ jobs:
         with:
           deno-version: v1.x
           
-      - run: deno vendor --help _deps.ts --force
+      - run: |
+          deno vendor --help _deps.ts --force
+          deno run --import-map vendor/import_map.json _deps.ts
         if: env.UPDATE_DENO == 'true'
   
       - name: pull request on lume update
