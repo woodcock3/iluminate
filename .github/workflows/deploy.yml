@@ -31,7 +31,6 @@ jobs:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
   
-  
   # Update Deno if env.UPDATE_DENO = true
   deno-update:
     name: deno update
