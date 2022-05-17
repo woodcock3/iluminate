@@ -29,12 +29,12 @@ site
     },
   }))
   .use(liquid())
-  .use(terser())
+  // .use(terser())
   .use(metas())
   .use(svgo())
   .use(basePath())
   .loadAssets([".js"], textLoader)
-  .process([".js"], processor.js)
+  // .process([".js"], processor.js)
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
 
