@@ -52,8 +52,8 @@ jobs:
         run: |
           deno run -A https://deno.land/x/lume/install.ts
           lume import-map
-          deno vendor --help _deps.ts --force
-          demo run --import-map vendor/import_map.json _deps.ts
+          deno vendor --help _deps.ts --force --output vendor
+          deno run --import-map vendor/import_map.json _deps.ts
   
       - name: pull request on lume update
         if: env.UPDATE_DENO == 'true'
