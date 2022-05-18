@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev filesystem:/assets/*; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
-    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1652889408">
+    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1652889486">
     <!--script type="module"--><meta property="og:type" content="website">
 <meta property="og:site_name" content="Rusticola">
 <meta property="og:locale" content="en">
@@ -23,7 +23,7 @@
 </head><body>import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();
     <script type="module">
       import alpinejs from 'https://cdn.skypack.dev/alpinejs';
-      import * as comps from '/assets/js/site.js';
+      import * as comps from 'luminous/assets/js/site.js';
       Object.keys(comps).forEach(comp => {
         let data = comps[comp]();
         alpinejs.data(comp, () => data);
