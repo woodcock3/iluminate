@@ -15,7 +15,7 @@ export const siteSrc = ".";
 export const siteDest = "_site";
 
 const site = lume({
-  location: new URL("https://woodcock3.github.io/luminate/"), // Update your base URL here
+  location: new URL("https://woodcock3.github.io/luminous/"), // Update your base URL here
 });
 
 site
