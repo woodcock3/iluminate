@@ -52,7 +52,7 @@ jobs:
         run: |
           deno run -A https://deno.land/x/lume/install.ts
           # lume import map
-          deno vendor --help _deps.ts --force --output modules
+          deno vendor _deps.ts --force --help --output modules
           deno run --import-map=import_map.json _deps.ts
   
       - name: pull request on lume update
