@@ -1,1 +1,1 @@
-import alpine from 'https://cdn.skypack.dev/alpinejs?dts';
+import alpine from 'https://cdn.skypack.dev/alpinejs';
