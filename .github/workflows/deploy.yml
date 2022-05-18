@@ -23,6 +23,7 @@ jobs:
         if: env.UPDATE_DENO != 'true'
         run: |
           deno run -A https://deno.land/x/lume/ci.ts
+          deno vendor _deps.ts --output modules
       - name: Deploy
         if: env.UPDATE_DENO != 'true'
         uses: peaceiris/actions-gh-pages@v3
