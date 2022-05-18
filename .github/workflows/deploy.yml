@@ -22,8 +22,10 @@ jobs:
       - name: Build site
         if: env.UPDATE_DENO != 'true'
         run: |
-          deno run -A https://deno.land/x/lume/ci.ts
+         
           deno vendor _deps.ts --output modules
+          deno run -A --import-map modules/import_map.json _deps.ts
+          deno run -A https://deno.land/x/lume/ci.ts
       - name: Deploy
         if: env.UPDATE_DENO != 'true'
         uses: peaceiris/actions-gh-pages@v3
