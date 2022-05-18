@@ -2,10 +2,8 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
-    <link rel="stylesheet" href="/luminate/assets/css/windi.css?v=1652888494">
-    <script type="module">import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();</script>
-    <title>The first static page</title>
-  <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/luminate/assets/css/windi.css?v=1652888620">
+    <!--script type="module"--><meta property="og:type" content="website">
 <meta property="og:site_name" content="Rusticola">
 <meta property="og:locale" content="en">
 <meta property="og:title" content="Luminate Starter">
@@ -22,8 +20,19 @@
 <meta itemprop="image" content="https://woodcock3.github.io/luminate/img/icon.png">
 <meta name="description" content="A lume starter repo with AlpineJS and Windicss">
 <meta name="keywords" content="lume, deno, starter, repo, tailwind, windicss, alpine">
-</head>
-  <body>
+</head><body>import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();
+    <script type="module">
+      import alpinejs from 'https://cdn.skypack.dev/alpinejs';
+      import * as comps from '/assets/js/site.js';
+      Object.keys(comps).forEach(comp => {
+        let data = comps[comp]();
+        alpinejs.data(comp, () => data);
+      });
+      alpinejs.start();
+    </script>
+    <title>The first static page</title>
+  
+  
     <main>
       <h2>Alpine Test</h2>
   <div>
