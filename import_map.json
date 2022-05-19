@@ -1,5 +1,6 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.9.0/"
+    "lume/": "https://deno.land/x/lume@v1.9.0/",
+    "alpine": "https://cdn.skypack.dev/pin/alpinejs@v3.10.2-bcx0dLVVrB09MQMPHogv/mode=imports,min/optimized/alpinejs.js"
   }
 }
