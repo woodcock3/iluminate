@@ -1,5 +1,5 @@
 ---
-layout: layouts/sectioned-page
+layout: layouts/sectioned-page.liquid
 title: First
 ---
 
