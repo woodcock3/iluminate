@@ -2,19 +2,11 @@
 <html lang="en">
   <head>{% assign buildversion = "now" | date:'?v=%s' %}
     <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev https://woodcock3.github.io/luminous; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev https://unpkg.com; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
     <link rel="stylesheet" href="{{ '/assets/css/windi.css' | append: buildversion }}">
-    <!script type="module">import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();</script>
-    <script type="module">
-      import alpinejs from 'https://cdn.skypack.dev/alpinejs';
-      import * as comps from '/luminous/assets/js/site.js';
-      Object.keys(comps).forEach(comp => {
-        let data = comps[comp]();
-        alpinejs.data(comp, () => data);
-      });
-      alpinejs.start();
-    </script>
-    <title>{{ title }}</title>
+    <script type="module">import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();</script>
+    <script nomodule defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+   <title>{{ title }}</title>
   </head>
   <body>
     <main>
