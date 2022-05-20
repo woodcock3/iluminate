@@ -1,6 +1,5 @@
 ---
 layout: layouts/base.liquid
-title: First
 templateEngine: liquid, md
 ---
 
