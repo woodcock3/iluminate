@@ -3,4 +3,10 @@ layout: layouts/base.liquid
 title: First
 ---
 
-This is a test
+<ul>
+{% for doc in data %}
+  <li>
+      {{ doc.title }}
+  </li>
+{% endfor %}
+</ul>
