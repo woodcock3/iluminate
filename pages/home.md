@@ -5,7 +5,7 @@ templateEngine: liquid, md
 ---
 
 <ul>
-{% for doc in data.home %}
+{% for doc in data %}
   <li>
       {{ doc.title }}
   </li>
