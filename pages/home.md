@@ -4,9 +4,10 @@ templateEngine: liquid, md
 ---
 
 <ul>
-{% for doc in home %}
+{% for section in search.pages("home") %}
   <li>
-      {{ doc.title }}
+      {{ section.data.title }}
   </li>
 {% endfor %}
 </ul>
+
