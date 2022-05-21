@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.liquid
-templateEngine: njk, md
+templateEngine: liquid, md
 ---
 
 <ul>
