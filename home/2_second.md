@@ -2,6 +2,6 @@
 title: second section
 ---
 
-#{{ title }}
+# {{ title }}
 
 This is words that go on the page 
