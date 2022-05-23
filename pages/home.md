@@ -3,11 +3,11 @@ layout: layouts/sectioned-page.liquid
 templateEngine: liquid, md
 ---
 
-<ul>
-{% for section in search.pages("home") %}
-  <li>
-      {{ section.title }}
-  </li>
-{% endfor %}
-</ul>
+# {{ data.home.first.title }}
+
+{{ data.home.first.content }}
+
+# {{ data.home.second.title }}
+
+{{ data.home.second.content }}
 
