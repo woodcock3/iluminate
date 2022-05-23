@@ -3,11 +3,11 @@ layout: layouts/sectioned-page.liquid
 templateEngine: liquid, md
 ---
 
-# {{ data.home.first.title }}
+# {{ home.first.title }}
 
-{{ data.home.first.content }}
+{{ home.first.content }}
 
-# {{ data.home.second.title }}
+# {{ home.second.title }}
 
-{{ data.home.second.content }}
+{{ home.second.content }}
 
