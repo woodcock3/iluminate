@@ -2,3 +2,4 @@ layout: layouts/sectioned-page.liquid
 collection_type: "home"
 tag: home
 templateEngine: liquid, md
+url: /home
