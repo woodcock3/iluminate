@@ -1,12 +1,12 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/sectioned-page.liquid
 templateEngine: liquid, md
 ---
 
 <ul>
 {% for section in search.pages("home") %}
   <li>
-      {{ section.data.title }}
+      {{ section.title }}
   </li>
 {% endfor %}
 </ul>
