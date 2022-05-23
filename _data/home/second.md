@@ -1,5 +1,6 @@
 ---
 title: second section
+templateEngine: liquid, md
 ---
 
 # {{ title }}
