@@ -1,5 +1,6 @@
 ---
 title: first
+templateEngine: liquid, md
 ---
 
 # {{ title }}
