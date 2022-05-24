@@ -2,6 +2,6 @@
 title: first
 ---
 
-# {{ home.first.title }}
+# {{ page.data.title }}
 
 This is words that go on the page 
