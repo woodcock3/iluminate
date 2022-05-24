@@ -1,8 +1,7 @@
 ---
 title: second section
-templateEngine: liquid, md
 ---
 
-# {{ title }}
+# {{ home.second.title }}
 
 This is words that go on the page 
