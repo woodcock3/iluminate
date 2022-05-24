@@ -7,7 +7,7 @@ templateEngine: liquid, md
 
 {{ home.first.content }}
 
-# {{ home.second.title }}
+# {{ data.home.second.title }}
 
 {{ home.second.content }}
 
