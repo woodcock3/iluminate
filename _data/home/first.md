@@ -1,8 +1,7 @@
 ---
 title: first
-templateEngine: liquid, md
 ---
 
-# {{ title }}
+# {{ title | njk | safe }}
 
 This is words that go on the page 
