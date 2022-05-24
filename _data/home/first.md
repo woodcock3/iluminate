@@ -2,6 +2,6 @@
 title: first
 ---
 
-# {{ title | njk | safe }}
+# {{ home.first.title }}
 
 This is words that go on the page 
