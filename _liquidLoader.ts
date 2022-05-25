@@ -1,6 +1,6 @@
-import { Engine } from "https://deno.land/x/lume@v1.9.0/plugins/liquid.ts";
+import { LiquidEngine } from "https://deno.land/x/lume@v1.9.0/plugins/liquid.ts";
 
 async function liquidLoader(path) {
   const content = await Deno.readTextFile(path);
-  return Engine(content);
+  return LiquidEngine(content);
 }
