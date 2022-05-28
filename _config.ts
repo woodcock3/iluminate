@@ -36,7 +36,7 @@ site
   .use(svgo())
   .use(basePath())
   .loadData([".md"])
-  .loadData([".liquid"], liquidLoader)
+  .loadData([".liquid"])
   .loadAssets([".js"], textLoader)
   // .process([".js"], processor.js)
   .use(slugifyUrls({ alphanumeric: false }))
