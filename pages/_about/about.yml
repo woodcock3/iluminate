@@ -1,2 +1,3 @@
 templateEngine: liquid,md
-tags: about
+tags: 
+  - about
