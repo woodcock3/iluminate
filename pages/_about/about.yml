@@ -1,2 +1,2 @@
-templateEngine: "liquid, md"
-tags: "about"
+templateEngine: liquid,md
+tags: about
