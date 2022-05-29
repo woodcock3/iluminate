@@ -18,6 +18,24 @@ const site = lume({
   location: new URL("https://woodcock3.github.io/luminous/"), // Update your base URL here
 });
 
+// Index page sections
+//eleventyConfig.addCollection("sections", function(collection) {
+//	return collection.getAllSorted().filter(function(item) {
+//		return item.inputPath.match(/^\.\/_src\/sections\//) !== null;
+//	}).sort(function(a, b) {
+//		return b.data.order - a.data.order;
+//	});
+//});
+
+// Prior work experience
+//eleventyConfig.addCollection("exp", function(collection) {
+//	return collection.getAllSorted().filter(function(item) {
+//		return item.inputPath.match(/^\.\/_src\/exp\//) !== null;
+//	}).sort(function(a, b) {
+//		return a.data.start - b.data.start;
+//	});
+//});
+
 site
   .ignore("README.md")
   .copy("img")
