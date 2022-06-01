@@ -19,8 +19,8 @@ templateEngine: liquid,md
 
 <ul>
   {%- for section in tags.about %}
-  <li>{{ section.data.title }}</li>
-  <li>{{ section.content }}</li>
-  <li>{{ section.data.tags }}</li>
+  <li>{{ section.data.title | md }}</li>
+  <li>{{ section.content | md }}</li>
+  <li>{{ section.data.tags | md }}</li>
   {%- endfor %}
 </ul>
