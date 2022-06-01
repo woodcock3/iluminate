@@ -1,7 +1,6 @@
 ---
 title: "The first static page"
 layout: layouts/base.liquid
-templateEngine: liquid,md
 ---
 
 ## Alpine Test
