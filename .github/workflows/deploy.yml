@@ -3,7 +3,7 @@ on: [push]
 
 # Conditional environmental if's      
 env:
-  UPDATE_DENO: true # false = deploy lume , true = update deno
+  UPDATE_DENO: false # false = deploy lume , true = update deno
 
 jobs:
   build_deploy_lume:
