@@ -18,7 +18,7 @@ templateEngine: liquid,md
 <h1 class="text-3xl font-bold underline">Hello world!</h1>
 
 <ul>
-  {%- for section in tags.about %}
+  {%- for section in search.pages("about") %}
   <li>{{ section.data.title }}</li>
   <li>{{ section.content | liquid }}</li>
   <li>{{ section.data.tags }}</li>
