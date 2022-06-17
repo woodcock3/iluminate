@@ -19,8 +19,8 @@ templateEngine: liquid,md
 
 <ul>
   {%- for section in search.pages("about") %}
-  <li>{{ section.data.title }}</li>
-  <li>{{ section.content | liquid }}</li>
-  <li>{{ section.data.tags }}</li>
+  <li>{{ section.title }}</li>
+  <li>{{ section.content }}</li>
+  <li>{{ section.tags }}</li>
   {%- endfor %}
 </ul>
