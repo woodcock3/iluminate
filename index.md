@@ -17,11 +17,11 @@ templateEngine: liquid,md
   
 <h1 class="text-3xl font-bold underline">Hello world!</h1>
 
+
 <ul>
-  {%- for section in about %}
-  <li>{{ section.first.title }}</li>
-  <li>{{ section.tags }}</li>
-  {%- endfor %}
+  {% for post in search.pages("about") %}
+  <li>{{ post.data.title }}</li>
+  {% endfor %}
 </ul>
 
 
