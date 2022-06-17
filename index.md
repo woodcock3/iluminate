@@ -20,7 +20,7 @@ templateEngine: liquid,md
 <ul>
   {%- for section in search.pages("about") %}
   <li>{{ section.first.title }}</li>
-  <li>{{ section.second.tags }}</li>
+  <li>{{ section.tags }}</li>
   {%- endfor %}
 </ul>
 
