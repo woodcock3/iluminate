@@ -21,6 +21,7 @@ templateEngine: liquid,md
 <ul>
   {% for post in search.pages("about") %}
   <li>{{ post.data.title }}</li>
+  <li>{{ post.data.url }}</li>
   {% endfor %}
 </ul>
 
