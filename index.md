@@ -23,3 +23,14 @@ templateEngine: liquid,md
   <li>{{ section.second.tags }}</li>
   {%- endfor %}
 </ul>
+
+
+
+# {{ home.first.title }}
+
+{{ home.first.content | liquid }}
+
+# {{ home.second.title }}
+
+{{ home.second.content | liquid 
+}}
