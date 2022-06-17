@@ -1,3 +1,4 @@
 templateEngine: liquid,md
+url: false
 tags: 
   - about
