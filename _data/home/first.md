@@ -2,6 +2,6 @@
 title: first
 ---
 
-# {{ page.data.title }}
+# {{ home.first.title }}
 
 First section data 
