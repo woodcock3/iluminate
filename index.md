@@ -19,7 +19,7 @@ templateEngine: liquid,md
 
 
 <ul>
-  {% for post in search.pages("about") %}
+  {% for post in search.pages("type=about") %}
   <li>{{ post.data.title }}</li>
   <li>{{ post.data.url }}</li>
   <li>{{ post.data.test }}</li>
