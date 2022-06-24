@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev https://unpkg.com; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
-    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1656093059">
+    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1656093734">
     <script type="module">import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();</script>
     <script nomodule="" defer="" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
    <title>The first static page</title>
@@ -40,23 +40,55 @@
   <li>The first static page</li>
   <li>/</li>
   <li></li>
-  <li></li>
+  <li>## Alpine Test
+  <div>
+    <div>
+      <span class="text-change">Good design</span><br>
+      <span class="change">is<br>as little design<br>as possible</span><br>
+      <span x-data="{message:'🤖 Hello World 🤓'}" x-text="message"></span>
+    </div>
+  </div>
+<h2>Tailwind/Windi CSS Test</h2>
+<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<ul>
+  {% for post in search.pages("about") %}
+  <li>{{ post.data.title }}</li>
+  <li>{{ post.data.url }}</li>
+  <li>{{ post.data.test }}</li>
+  <li>{{ post.data.content }}</li>
+  {% endfor %}
+</ul>
+<h1>{{ home.first.title }}</h1>
+<p>{{ home.first.content | liquid }}</p>
+<h1>{{ home.second.title }}</h1>
+<p>{{ home.second.content | liquid }}</p>
+</li>
   <li>First</li>
   <li>/pages/about/first/</li>
   <li>best</li>
-  <li></li>
+  <li># {{ title }}
+<p>This is the content of the first section. Will this work?</p>
+</li>
   <li>alpha</li>
   <li>/pages/about/alpha/</li>
   <li>best</li>
-  <li></li>
+  <li># {{ title }}
+<p>This is the alpha file. Can I loop over the other files? {{ tags }}</p>
+</li>
   <li>Second</li>
   <li>/pages/about/second/</li>
   <li>best</li>
-  <li></li>
+  <li># {{ title }}
+This is the second section on the site. Can I get this done?
+</li>
   <li></li>
   <li>/pages/home/home/</li>
   <li></li>
-  <li></li>
+  <li># {{ home.first.title }}
+<p>{{ home.first.content }}</p>
+<h1>{{ home.second.title }}</h1>
+<p>{{ home.second.content }}</p>
+</li>
 </ul>
 <h1>first</h1>
 <h1></h1>
