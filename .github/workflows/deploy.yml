@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ env.UPDATE_DENO }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: env.UPDATE_DENO != 'true'
         with:
           fetch-depth: 1
@@ -42,7 +42,7 @@ jobs:
       - run: echo '${{ env.UPDATE_DENO }}'
       - name: Checkout
         if: env.UPDATE_DENO == 'true'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup deno
         if: env.UPDATE_DENO == 'true'
         uses: denoland/setup-deno@v1
