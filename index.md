@@ -23,7 +23,7 @@ templateEngine: liquid,md
   <li>{{ post.data.title }}</li>
   <li>{{ post.data.url }}</li>
   <li>{{ post.data.test }}</li>
-  <li>{{ post.content }}</li>
+  <li>{{ post.data.content }}</li>
   {% endfor %}
 </ul>
 
