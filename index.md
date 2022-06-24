@@ -28,11 +28,10 @@ templateEngine: liquid,md
 
 
 
-# {{ home.first.title }}
+// # {{ home.first.title }}
 
 {{ home.first.content | liquid }}
 
-# {{ home.second.title }}
+// # {{ home.second.title }}
 
-{{ home.second.content | liquid 
-}}
+{{ home.second.content | liquid }}
