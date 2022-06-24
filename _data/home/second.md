@@ -2,7 +2,7 @@
 title: second section
 ---
 
-# {{ home.second.title }}
+# {{ home.second.title | liquid }}
 
 # {{ title }}
 
