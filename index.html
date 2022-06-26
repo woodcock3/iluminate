@@ -2,7 +2,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://cdn.skypack.dev https://unpkg.com; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self';">
-    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1656097071">
+    <link rel="stylesheet" href="/luminous/assets/css/windi.css?v=1656213701">
     <script type="module">import alpine from 'https://cdn.skypack.dev/alpinejs'; alpine.start();</script>
     <script nomodule="" defer="" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
    <title>The first static page</title>
@@ -37,32 +37,6 @@
 <h2>Tailwind/Windi CSS Test</h2>
 <h1 class="text-3xl font-bold underline">Hello world!</h1>
 <ul>
-  <li>The first static page</li>
-  <li>/</li>
-  <li></li>
-  <li>## Alpine Test
-  <div>
-    <div>
-      <span class="text-change">Good design</span><br>
-      <span class="change">is<br>as little design<br>as possible</span><br>
-      <span x-data="{message:'🤖 Hello World 🤓'}" x-text="message"></span>
-    </div>
-  </div>
-<h2>Tailwind/Windi CSS Test</h2>
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
-<ul>
-  {% for post in search.pages("type=about") %}
-  <li>{{ post.data.title }}</li>
-  <li>{{ post.data.url }}</li>
-  <li>{{ post.data.test }}</li>
-  <li>{{ post.data.content }}</li>
-  {% endfor %}
-</ul>
-<h1>{{ home.first.title }}</h1>
-<p>{{ home.first.content | liquid }}</p>
-<h1>{{ home.second.title }}</h1>
-<p>{{ home.second.content | liquid }}</p>
-</li>
   <li>First</li>
   <li>/pages/about/first/</li>
   <li>best</li>
@@ -88,6 +62,32 @@ This is the second section on the site. Can I get this done?
 <p>{{ home.first.content }}</p>
 <h1>{{ home.second.title }}</h1>
 <p>{{ home.second.content }}</p>
+</li>
+  <li>The first static page</li>
+  <li>/</li>
+  <li></li>
+  <li>## Alpine Test
+  <div>
+    <div>
+      <span class="text-change">Good design</span><br>
+      <span class="change">is<br>as little design<br>as possible</span><br>
+      <span x-data="{message:'🤖 Hello World 🤓'}" x-text="message"></span>
+    </div>
+  </div>
+<h2>Tailwind/Windi CSS Test</h2>
+<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<ul>
+  {% for post in search.pages("type=about") %}
+  <li>{{ post.data.title }}</li>
+  <li>{{ post.data.url }}</li>
+  <li>{{ post.data.test }}</li>
+  <li>{{ post.data.content }}</li>
+  {% endfor %}
+</ul>
+<h1>{{ home.first.title }}</h1>
+<p>{{ home.first.content | liquid }}</p>
+<h1>{{ home.second.title }}</h1>
+<p>{{ home.second.content | liquid }}</p>
 </li>
 </ul>
 <h1>first</h1>
