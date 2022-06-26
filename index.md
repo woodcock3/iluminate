@@ -2,6 +2,7 @@
 title: "The first static page"
 layout: layouts/base.liquid
 templateEngine: liquid,md
+renderOrder: 1
 ---
 
 ## Alpine Test
